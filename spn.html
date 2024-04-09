@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Spoon</title>
+<style>
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .spoon {
+    width: 200px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #aaa;
+    border-radius: 50% 50% 40% 40%;
+    background: linear-gradient(135deg, #eee 0%, #ccc 100%);
+    transform: rotate(10deg);
+  }
+
+  .handle {
+    position: absolute;
+    bottom: -60px;
+    width: 60px;
+    height: 150px;
+    background: linear-gradient(180deg, #bbb 0%, #999 100%);
+    border-radius: 50%;
+    left: calc(50% - 30px);
+    transform: rotate(-45deg);
+    z-index: 1;
+  }
+</style>
+</head>
+<body>
+
+<div class="spoon">
+  <div class="handle"></div>
+</div>
+
+</body>
+</html>
